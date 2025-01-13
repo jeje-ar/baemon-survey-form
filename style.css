@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background-image:linear-gradient(90deg, rgba(2,0,36,0.5) 0%, 
+    rgba(228,26,216,0.5) 41%, 
+    rgba(0,212,255,0.5) 100%), 
+    url('img/baemon-wp.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+body{
+    font-family:Montserrat, sans-serif ;
+    height: 1000px;
+}
+
+h1, p {
+    text-align: center;
+    color: white;
+}
+
+form{
+    max-width: 600px;
+    background-color: rgba(114, 3, 105, 0.776);
+    margin: 0 auto;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 20px;;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+ select{
+    display: block;
+    margin-top: 10px;
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    border:0;
+    padding: 10px;
+    font-family: inherit;
+}
+
+textarea{
+    height: 100px;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(133, 30, 230);
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

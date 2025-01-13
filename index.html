@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>BabyMonster Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">BabyMonster Survey Form</h1>
+    <p id="description">Please fill the form</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter your name.." required/>
+        </label>
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Enter your email.." required/>
+        </label>
+        <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" placeholder="How old are you?" min="15" max="99" required/>
+        </label>
+        <label for="dropdown" id="dropdown-label">
+            What social media do you use most often to see Babymonster content?
+            <select id="dropdown">
+                <option>Tes 1</option>
+                <option>Tes 2</option>
+            </select>
+        </label>
+
+        <label for="member" id="member-label">
+            Who is your bias?</label>
+            <input type="radio" name="member" value="1"  checked/> Ahyeon <br/>
+            <input type="radio" name="member" value="2"/> Asa <br/>
+            <input type="radio" name="member" value="3"/> Chiquita <br/>
+            <input type="radio" name="member" value="4"/> Pharita <br/>
+            <input type="radio" name="member" value="5"/> Rami <br/>
+            <input type="radio" name="member" value="6"/> Rora <br/>
+            <input type="radio" name="member" value="7"/> Ruka <br/>
+            <br/>
+    <!-- Bias Wrecker-->
+        <label for="member" id="member-label">
+            Who is your bias wrecker?</label>
+            <input type="radio" name="member-wrecker" value="1" checked/> Ahyeon <br/>
+            <input type="radio" name="member-wrecker" value="2"/> Asa <br/>
+            <input type="radio" name="member-wrecker" value="3"/> Chiquita <br/>
+            <input type="radio" name="member-wrecker" value="4"/> Pharita <br/>
+            <input type="radio" name="member-wrecker" value="5"/> Rami <br/>
+            <input type="radio" name="member-wrecker" value="6"/> Rora <br/>
+            <input type="radio" name="member-wrecker" value="7"/> Ruka <br/>
+    <br/>
+    <!--Drip Favourite Song-->
+    <label for="song" id="song-label">
+        What is your favourite "Drip" album song?</label>
+        <input type="checkbox" value="clik-clak"/> Clik Clak <br/>
+        <input type="checkbox" value="drip"/> DRIP <br/>
+        <input type="checkbox" value="love-maybe"/> Love Maybe <br/>
+        <input type="checkbox" value="really-like-you"/> Really Like You <br/>
+        <input type="checkbox" value="billionaire"/> BILLIONAIRE <br/>
+        <input type="checkbox" value="love-in-my-heart"/> Love In My Heart <br/>
+        <input type="checkbox" value="woke-up-in-tokyo"/> Woke Up In Tokyo (Asa and Ruka) <br/>
+        <input type="checkbox" value="forever"/> Forever <br/>
+        <input type="checkbox" value="batter-up"/> Batter Up (REMIX) <br/>
+        <br/>
+    <label for="comment" id="comment">
+        Any comments or suggestions?
+        <textarea id="comments" cols="30" rows="10"></textarea>
+    </label>
+
+    <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
